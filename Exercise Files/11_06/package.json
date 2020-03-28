@@ -1,0 +1,16 @@
+{
+  "name": "11_06",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.19.0"
+  },
+  "scripts": {
+    "eslint": "eslint *.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
