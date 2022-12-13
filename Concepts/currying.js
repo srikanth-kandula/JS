@@ -26,7 +26,7 @@
     }
   }
 
-  
+
 
   var curryAddNumbers = currying(AddNumbers);
   var curryAddwith2 = curryAddNumbers(2);
@@ -36,3 +36,22 @@
   /** a function of 3 arguments is converted to 3 functions each with one argument */
 
 })();
+
+function sum(a, b, c) {
+  return a + b + c;
+}
+
+function currySum(a) {
+  return function (b) {
+    return function (c) {
+      return a + b + c;
+    }
+  }
+}
+
+sum(1, 2, 3);
+currySum(1)(2)(3)
+
+console.log(sum(1, 2, 3));
+
+console.log(currySum(1)(2)(3));

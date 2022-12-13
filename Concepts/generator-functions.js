@@ -50,7 +50,7 @@ var loggen = logGenerator();
 
 // the first call of next executes from the start of the function
 // until the first yield statement
-loggen.next();             // 0
+loggen.next('somestring'); // 0
 loggen.next('pretzel');    // 1 pretzel
 loggen.next('california'); // 2 california
 loggen.next('mayonnaise'); // 3 mayonnaise
